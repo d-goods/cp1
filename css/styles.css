@@ -3,7 +3,6 @@
     flex-flow: column;
     height: 100%;
     position: relative;
-    min-width: 66rem;
     min-height: 100vh;
     background-color: black;
 }
@@ -15,7 +14,7 @@
     position: relative;
     min-width: 66rem;
     min-height: 100vh;
-    background-color: white;
+    background-color: black;
 }
 
 .logo {
@@ -24,7 +23,7 @@
     border: white solid .066em;
     border-radius: .33em;
     text-align: center;
-    width: 2.5em;
+    font-weight: 600 !important;
 }
 
 .logo:hover {
@@ -46,8 +45,7 @@
     height: 100%;
     padding-bottom: 12em;
     color: white !important;
-    background: url(/bgs/jupiter2.jpg) top center no-repeat;
-    mix-blend-mode: difference !important;
+    background: url(https://www.nasa.gov/sites/default/files/thumbnails/image/mars-landing-site-tn.jpg) top 12em center no-repeat;
 }
 
 .content-wrap-home h1 {
@@ -56,7 +54,63 @@
 }
 
 .content-wrap-home h2 {
-    margin: 0em 2em;
+    text-align: center;
+    font-weight: 700;
+    margin: 0em auto;
+    padding: 2em;
+    /* mix-blend-mode: difference; */
+    filter: drop-shadow(0 0 0.15rem #000000);
+}
+
+.content-wrap-page {
+    flex: 1 1 auto;
+    position: relative;
+    display: inline-block;
+    font-family: Roboto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 12em;
+    color: white !important;
+}
+
+.earth {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/2a/Mars_Earth_Comparison.png) top 6em center no-repeat;
+}
+
+.conditions {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/d/dc/PIA17944-MarsCuriosityRover-AfterCrossingDingoGapSanddune-20140209.jpg) top -28em center no-repeat;
+}
+
+.transportation {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/8/87/Elon_Musk%27s_Tesla_Roadster_%2840143096241%29.jpg) top -13em center no-repeat;
+}
+
+.missions {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/c/cf/Mars_Food_Production_-_Bisected.jpg) top -36em center no-repeat;
+}
+
+.content-wrap-page h1 {
+    color: white;
+    font-size: 10em;
+    text-align: center;
+}
+
+.content-wrap-page h2 {
+    font-family: Roboto;
+    text-align: center;
+    font-weight: 500;
+    margin: 0em auto;
+    padding: 2em;
+    color: #000000;
+}
+
+.info-text {
+    display: inline-block;
+    width: auto;
+    margin: 3em 2em 0 2em;
+    border-radius: 2em;
+    background-color: white;
+    opacity: .75;
 }
 
 .content-wrap {
@@ -68,9 +122,10 @@
     width: 100%;
     height: 100%;
     padding-bottom: 12em;
-    color: black !important;
-    mix-blend-mode: difference !important;
+    color: white !important;
 }
+
+
 
 .content-wrap h1 {
     font-size: 10em;
@@ -118,13 +173,13 @@ footer p {
 footer .top {
     padding: 1em;
     display: inline-block;
-    min-height: 7em;
+    min-height: 3em;
     width: 100%;
 }
 
 footer .bottom {
     text-align: center;
-    padding: 1em;
+    padding: .33em;
     display: inline-block;
     width: 100%;
 }
